@@ -1,228 +1,400 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFK5R4SXYP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-CFK5R4SXYP');
-    </script>
-    
-    <!-- Metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Yongshan Ding | Yale University</title>
-    <meta name="description" content="Quantum Systems Laboratory at Yale University.">
-    <meta name="author" content="Yongshan Ding">
-    
-    <!-- Typekit Font -->
-    <script src="https://use.typekit.net/iqf6iae.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    
-    <!-- TODO: favicon, RSS, responsive, google-analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFK5R4SXYP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFK5R4SXYP');
+  </script>
+  <!-- metadata -->
+  <title>Home - Yongshan Ding | Yale University</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+  <meta name="description" content="Quantum Systems Laboratory at Yale University.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Yongshan Ding">
+
+  <!-- typekit font -->
+  <script src="https://use.typekit.net/iqf6iae.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- TODO:  favicon, rss, responsive, google-analytics -->
 </head>
+
 <body>
+
+  <article>
     <header>
-        <nav class="navMenu" id="mynavMenu">
-            <a href="home.html" class="fixleft" title="Home"><strong>Yale</strong> QSL</a>
-            <a href="news.html">News</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="publications.html">Publications</a>
-            <!-- <a href="https://dinglab.research.yale.edu">Group</a> -->
-            <a href="bio.html">Bio</a>
-            <a href="about.html">Research</a>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" title="Menu">
-                <i class="bars"></i>
-            </a>
-        </nav>
+      <div class="navMenu" id="mynavMenu">
+        <a href="home.html" class="fixleft" title="home"><b>Yale</b> QSL</a>
+        <a href="news.html">News</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="publications.html">Publications</a>
+        <!-- <a href="https://dinglab.research.yale.edu">Group</a> -->
+        <a href="bio.html">Bio</a>
+        <a href="about.html">Research</a>
+        <a href="javascript:void(0);" class="icon" onclick="barsIcon()" title="menu">
+          <i class="bars"></i>
+        </a>
+      </div>
     </header>
 
-    <main>
-        <!-- Profile Section -->
-        <section class="section-title text-center">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="images/yongshan_ding_2021.JPG" alt="Portrait of Yongshan Ding" width="300" height="300" class="rounded-corners">
-                </div>
-                <div class="profile-info">
-                    <h1>Yongshan Ding</h1>
-                    <h5 class="university">Yale University</h5>
-                    <div class="social-links">
-                        <a href="https://twitter.com/Yongshan_Ding" class="twitter" title="Twitter"></a>
-                        <a href="https://github.com/yongshanding" class="github" title="GitHub"></a>
-                        <a href="https://youtube.com/playlist?list=PLfOgkuiMs5qCa8BUrFMumyvPqeoOL-iu8" class="youtube" title="YouTube"></a>
-                        <a href="vitae.pdf" class="cv" title="Curriculum Vitae"></a>
-                    </div>
-                    <p>yongshan DOT ding AT yale DOT edu</p>
-                </div>
-            </div>
-            <hr class="divider">
-            <div class="introduction">
-                <p>I am an Assistant Professor of <a href="https://cs.yale.edu">Computer Science</a> and of <a href="https://appliedphysics.yale.edu">Applied Physics</a> at <a href="https://www.yale.edu">Yale University</a>. I am a member of the <a href="https://quantuminstitute.yale.edu">Yale Quantum Institute (YQI)</a> and affiliated with the <a href="https://csl.yale.edu">Computer Systems Lab (CSL)</a>. I lead the Quantum Systems Lab (QSL) at Yale. Our research focuses on advancing the capability and performance of next-generation quantum information systems. We work on a broad set of problems related to algorithms and architectures of quantum computers.</p>
-                <p><strong>Prospective Students:</strong> Our group has positions open for graduate and undergraduate researchers. For more information see our <a href="opportunities.html">open opportunities</a> and our <a href="about.html">Research</a> and <a href="publications.html">Publications</a> pages.</p>
-            </div>
-        </section>
-
-        <!-- Research Section -->
-        <section class="section-research">
-            <h2 class="section-heading"><a href="about.html">Research</a></h2>
-            <p>Quantum computers hold enormous potential in solving some classically intractable problems. To unlock this potential, researchers around the globe are racing to develop practical quantum algorithms, software, and hardware. In our group, we are especially interested in projects that bridge theory and application. Our current research efforts consist of several themes:</p>
-            <div class="research-themes">
-                <div class="theme">
-                    <img src="images/algorithms.png" alt="Research Theme: Algorithms" class="theme-image">
-                    <div class="theme-content">
-                        <h3>Enabling Quantum Algorithms in the Presence of Noise</h3>
-                        <p>Emerging quantum computing applications need theoretical efficiency guarantees and practical noise-resilient implementations to demonstrate their advantage over classical algorithms. We are exploring quantum circuit designs that achieve high accuracy for problems such as Hamiltonian simulations, optimizations, and machine learning tasks.</p>
-                    </div>
-                </div>
-                <div class="theme">
-                    <img src="images/software.png" alt="Research Theme: Software" class="theme-image">
-                    <div class="theme-content">
-                        <h3>Designing Efficient Compiling Software</h3>
-                        <p>Traditional quantum compilation seeks universality by decomposing any target unitary into a sequence of basis gates. We are developing systems software that leverages device connectivity and ancillary qubits to understand conditions for efficient universality.</p>
-                    </div>
-                </div>
-                <div class="theme">
-                    <img src="images/architecture.png" alt="Research Theme: Architecture" class="theme-image">
-                    <div class="theme-content">
-                        <h3>Architectural Support for Quantum Noise Mitigation and Error Correction</h3>
-                        <p>We are developing application- and device-adapted error correction methods and exploring the role of architecture in enabling efficient detection and decoding of errors.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="read-more">
-                <a href="about.html" class="btn">Read More</a>
-            </div>
-        </section>
-
-        <!-- Highlights Section -->
-        <section class="section-highlights">
-            <h2 class="section-heading">Highlights</h2>
-            <div class="highlights-container">
-                <div class="highlight">
-                    <a href="https://link.springer.com/book/10.1007/978-3-031-01765-0">
-                        <img src="images/Highlight1.png" alt="Book Highlight" class="highlight-image">
-                    </a>
-                    <div class="highlight-details">
-                        <p>An overview of recent advancements in quantum computer systems research.</p>
-                        <p><a href="https://link.springer.com/book/10.1007/978-3-031-01765-0">Springer Nature &#10095;&#10095;</a></p>
-                        <p><a href="https://a.co/d/evEFvwT">Amazon &#10095;&#10095;</a></p>
-                        <p>Japanese Translation (2023)</p>
-                        <p><a href="https://www.ohmsha.co.jp/book/9784274230660/">Ohmsha &#10095;&#10095;</a></p>
-                        <p><a href="https://www.amazon.co.jp/dp/427423066X?ref_=cm_sw_r_cp_ud_dp_G55Z5ARZ1X02VVA8N99X">Amazon JP &#10095;&#10095;</a></p>
-                    </div>
-                </div>
-                <div class="highlight">
-                    <a href="https://www.edx.org/professional-certificate/uchicagox-quantum-computer-systems-design">
-                        <img src="images/Highlight2.png" alt="MOOC Highlight" class="highlight-image">
-                    </a>
-                    <div class="highlight-details">
-                        <p>An online graduate short course on the principles and practice of quantum computer systems design.</p>
-                        <p><a href="https://www.edx.org/professional-certificate/uchicagox-quantum-computer-systems-design">edX &#10095;&#10095;</a></p>
-                        <p><a href="#">YouTube &#10095;&#10095;</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News & Events Section -->
-        <section class="section-news">
-            <h2 class="section-heading"><a href="news.html">News &#38; Events</a></h2>
-            <div class="carousel-container">
-                <div class="mySlides fade">
-                    <div class="carousel-subtitle">April 26, 2021</div>
-                    <div class="carousel-title">New Quantum Computing Colloquium Series at Yale</div>
-                    <div class="carousel-text">
-                        I am organizing a new speaker series, Quantum Computing Colloquium, starting April 2022. The talks will be hosted by YQI and Yale CS jointly. <a href="https://quantuminstitute.yale.edu/programs-events/csyqi-quantum-computing-colloquium-series">Learn more &#10095;&#10095;</a>
-                    </div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="carousel-subtitle">March 29, 2021</div>
-                    <div class="carousel-title">New Roles as Editors</div>
-                    <div class="carousel-text">
-                        I recently joined two journals — <a href="https://quantum-journal.org/about/people/">Quantum</a> as an Editor, and ACM Transactions on Quantum Computing (<a href="https://dl.acm.org/journal/tqc/editorial-board">TQC</a>) as an Associate Editor. Submit your research work to the journals!
-                    </div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="carousel-subtitle">Oct 1, 2021</div>
-                    <div class="carousel-title">Yale Quantum Systems Lab Now Opens</div>
-                    <div class="carousel-text">
-                        The Yale Quantum Systems Lab (QSL) is open for business. Come join us here at Yale! We have multiple open positions at the Ph.D. and internship levels. See opportunities on our group website. <a href="opportunities.html">Learn more &#10095;&#10095;</a>
-                    </div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="carousel-subtitle">September 1, 2021</div>
-                    <div class="carousel-title">New Position at Yale</div>
-                    <div class="carousel-text">
-                        I am excited to share that I am joining Yale CS as an Assistant Professor starting Fall 2021. I am so grateful for my mentors, colleagues, friends at UChicago and in the EPiQC collaboration for a perfect graduate school experience. <a href="https://fas.yale.edu/new-ladder-faculty-and-professors-2021-22">Learn more &#10095;&#10095;</a>
-                    </div>
-                </div>
-
-                <!-- Navigation Buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            
-            <!-- Carousel Dots -->
-            <div class="dots-container text-center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-                <span class="dot" onclick="currentSlide(4)"></span> 
-            </div>
-            
-            <div class="read-more">
-                <a href="news.html" class="btn">See All News</a>
-            </div>
-        </section>
-
-        <!-- Recent Talks Section -->
-        <section class="section-talks">
-            <h2 class="section-heading"><a href="publications.html#talks">Recent Talks</a></h2>
-            <div class="talks-container">
-                <div class="talk">
-                    <a href="https://youtu.be/6x3JCwItcdg">
-                        <img src="images/talk-NDMIT22.png" alt="Noise Mitigation Talk" class="talk-image">
-                    </a>
-                    <div class="talk-details">
-                        <h3>Software and Algorithmic Approaches to Quantum Noise Mitigation: An Overview</h3>
-                        <p><strong>Venue:</strong> Quantum Computer Systems Lecture Series by Univ of Notre Dame and MIT, July 2022</p>
-                        <p><strong>Abstract:</strong> I will discuss recent developments in noise mitigation techniques for quantum computers. In the Noisy Intermediate-Scale Quantum (NISQ) era, qubits have short lifetimes and quantum gates are prone to errors. Understanding and mitigating quantum noises is crucial for realizing practical quantum computation. This talk provides an overview of the field... <a href="https://qmlsys.mit.edu/lectures/">Learn more &#10095;&#10095;</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="read-more">
-                <a href="publications.html#talks" class="btn">See More Talks</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-social-links text-center">
-            <a href="https://twitter.com/Yongshan_Ding" class="twitter" title="Twitter"></a>
-            <a href="https://github.com/yongshanding" class="github" title="GitHub"></a>
-            <a href="youtube.html" class="youtube" title="YouTube"></a>
-            <a href="https://www.yongshanding.com" class="webpage" title="Prof. Yongshan Ding's Webpage"></a>
+      <div class="section-title  text-center">
+      <div class="column-center">
+        <div class="header-column1 text-center">
+          <div class="image_carousel"><img src="images/yongshan_ding_2021.JPG" alt="Yongshan Ding" width="300" height="300" class="rounded-corners"></div>
         </div>
-        <hr class="divider">
-        <p class="copyright text-center">&copy; 2025 Yongshan Ding. All rights reserved.</p>
-    </footer>
+        <div class="header-column2">
+          <br>
+          <div class="header-name text-center"> Yongshan Ding </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-center">
+          <div class="header-column2">
+          <div class="header-bio text-center">
+            <br>
+          <!-- <p>Assistant Professor of Computer Science</p> -->
+          <h5 style="color:#00356b"><b>Yale University</b></h5>
+          <!-- <br> -->
+          <h1 class="tags"> __________ </h1>
+          <br>
+          <!-- <p>yongshan DOT ding AT yale DOT edu</p> -->
+          <!-- <p>Address </p> -->
+          </div>
+          <div class="social-links" id="social-center">
+          <a href="https://twitter.com/Yongshan_Ding" class="twitter" title="Twitter"></a> 
+          &nbsp;
+          <a href="https://github.com/yongshanding" class="github" title="Github"></a>
+          &nbsp;
+          <a href="https://youtube.com/playlist?list=PLfOgkuiMs5qCa8BUrFMumyvPqeoOL-iu8" class="youtube" title="YouTube"></a>
+          &nbsp;
+          <a href="vitae.pdf" class="webpage" title="Curriculum Vitae"></a>
+          </div>
+          <br><br>
+          <p>yongshan DOT ding AT yale DOT edu</p>
+          </div>
+        </div>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="gotop" id="myGotop" title="Go to top">&#8679;</a>
+          <!-- <div class="slide-module"><h2>Quantum Computer Systems Lab</h3></div>
+          <div class="slide-module"><h3>Yale University</h3></div>
+          <div class="slide-module"><p style="color:#00356b">Open for business in Fall 2021</p></div>
+          <div class="slide-module"><div class="boxed"><a href="join.html" style="font-size:18px">Join Us</a></div></div>
+         -->
+        </div>
+      <div class="hline text-center" id="overview">
+            <!-- Yongshan Ding -->
+            <h3 class="faded"> <font color=#c6c6c6>______________________________</font> </h3>
 
-    <!-- JavaScript Files -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/main.js"></script>
+      </div>
+      <!-- <div class="hline"> -->
+          <div class="header-intro">
+            <div class="slide-module"><div class="block-text">
+              <br>
+              <p>I am an Assistant Professor of <a href="https://cs.yale.edu">Computer Science</a> and of <a href="https://appliedphysics.yale.edu">Applied Physics</a> at <a href="https://www.yale.edu">Yale University</a>. I am a member of the <a href="https://quantuminstitute.yale.edu">Yale Quantum Institute (YQI)</a> and affiliated with the <a href="https://csl.yale.edu">Computer Systems Lab (CSL)</a>. I lead the Quantum Systems Lab (QSL) at Yale. Our research focuses on advancing the capability and performance of next-generation quantum information systems. We work on a broad set of problems related to algorithms and architectures of quantum computers. </p>
+
+              <br>
+              <p><b><font color=#00356b>Prospective Students:</font></b> Our group has positions open for graduate <!-- students, postdoctoral scholars, --> and undergraduate researchers. For more information see our <a href="opportunities.html">open opportunities</a> and our <a href="about.html">Research</a> and <a href="publications.html">Publications</a> pages.
+              </p>
+            </div></div>
+          </div>
+
+      </div>
+
+      <div class="section-one">
+          <div class="slide-module text-center"><div class="secTitle"><a href="about.html">Research</a></div></div>
+          <div class="slide-module"><div class="block-text">
+              <br>
+              <p>Quantum computers hold enormous potential in solving some classically intractable problems. To unlock this potential, researchers around the globe are racing to develop practical quantum algorithms, software, and hardware. In our group, we are especially interested in projects that bridge theory and application. For example, our current research efforts consist of several themes: </p>
+              <br>
+          </div></div>
+          <div class="slide-module"><div class="block-text">
+            <div class="row">
+              <div class="header-column1 text-center">
+                <img src="images/algorithms.png" alt="Algorithms" width="60%" height="60%" class="rounded-corners">
+              </div>
+              <div class="header-column2">
+                <p><b>Enabling Quantum <u>Algorithms</u> in the Presence of Noise</b> &#8212; Emerging quantum computing applications need theoretical efficiency guarantees and practical noise-resilient implementations in order to show their advantage over classical algorithms. We are exploring quantum circuit designs that achieve high accuracy for problems such as Hamiltonian simulations, optimizations, and machine learning tasks.</p>
+                <br>
+              </div>
+            </div>
+          </div></div>
+          <div class="slide-module"><div class="block-text">
+
+          </div></div>
+
+          <div class="slide-module"><div class="block-text">
+            <div class="row">
+              <div class="header-column1 text-center">
+                <img src="images/software.png" alt="Software" width="60%" height="60%" class="rounded-corners">
+              </div>
+              <div class="header-column2">
+              <p><b>Designing Efficient Compiling <u>Software</u></b> &#8212; Traditional quantum compilation typically seeks universality, in that it decomposes any target unitary into a sequence of instructions from a set of basis gates. We are developing systems software that takes advantage of device connectivity and ancillary qubits to better understand the conditions for efficient universality. </p>
+              <br>
+              </div>
+            </div>
+          </div></div>
+          <div class="slide-module"><div class="block-text">
+            <div class="row">
+              <div class="header-column1 text-center">
+                <img src="images/architecture.png" alt="Architecture" width="60%" height="60%" class="rounded-corners">
+              </div>
+              <div class="header-column2">
+              <p><b><u>Architectural</u> Support for Quantum Noise Mitigation and Error Correction</b> &#8212;  We are recently developing application- and device-adapted error correction methods and exploring the role of architecture in enabling efficient detecting and decoding of errors. </p>
+              </div>
+            </div>
+          </div></div>
+          <br>
+          <div class="slide-module text-center"><div class="boxed"><a href="about.html" style="font-size:18px">Read more</a></div></div>
+      </div>
+
+      <div class="section-two">
+          <div class="slide-module text-center"><div class="secTitle">Highlights</div></div>
+          <div class="slide-module"><div class="block-text">
+            <br>
+            <div class="row">
+            <div class="column1of4 text-center">
+              <a href="https://link.springer.com/book/10.1007/978-3-031-01765-0"><div class="image_carousel"><img src="images/Highlight1.png" alt="BOOK" width="85%"  class="rounded-corners"></div></a>
+            </div>
+            <div class="column1of4 text-left">
+              <p> An overview of recent advancements in quantum computer systems research. <br><a href="https://link.springer.com/book/10.1007/978-3-031-01765-0">Springer Nature &#10095;&#10095;</a></p><p><a href="https://a.co/d/evEFvwT">Amazon &#10095;&#10095;</a></p><p>Japanese Translation (2023)</p><p><a href="https://www.ohmsha.co.jp/book/9784274230660/">Ohmsha &#10095;&#10095;</a></p><p><a href="https://www.amazon.co.jp/dp/427423066X?ref_=cm_sw_r_cp_ud_dp_G55Z5ARZ1X02VVA8N99X">Amazon JP &#10095;&#10095;</a></p><br><br>
+            </div>
+            <div class="column1of4 text-center">
+              <a href="https://www.edx.org/professional-certificate/uchicagox-quantum-computer-systems-design"><div class="image_carousel"><img src="images/Highlight2.png" alt="MOOC" width="85%" class="rounded-corners"></div></a>
+            </div>
+            <div class="column1of4 text-left">
+              <p> An online graduate short course on the principles and practice of quantum computer systems design. <br><a href="https://www.edx.org/professional-certificate/uchicagox-quantum-computer-systems-design">edX &#10095;&#10095;</a></p><p><a href="">YouTube &#10095;&#10095;</a> </p><br><br> 
+            </div>
+            </div>
+          </div></div>
+      </div>
+
+      <div class="section-three">
+          <div class="slide-module text-center"><div class="secTitle"><a href="news.html">News &#38; Events</a></div></div>
+          <!-- Slideshow  -->
+          <div class="slide-module carousel-container">
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <div class="carousel-subtitle">April 26, 2021</div>
+              <div class="carousel-title">New Quantum Computing Colloquium Series at Yale</div>
+              <div class="carousel-text">I am organizing a new speaker series, Quantum Computing Colloquium, starting April 2022. The talks will be hosted by YQI and Yale CS jointly. <a href="https://quantuminstitute.yale.edu/programs-events/csyqi-quantum-computing-colloquium-series"> Learn more &#10095;&#10095;</a> </div>
+            </div>
+
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <div class="carousel-subtitle">March 29, 2021</div>
+              <div class="carousel-title">New Roles as Editors</div>
+              <div class="carousel-text">I recently joined two journals &#8211; <a href="https://quantum-journal.org/about/people/">Quantum</a> as an Editor, and ACM Transactions on Quantum Computing (<a href="https://dl.acm.org/journal/tqc/editorial-board">TQC</a>) as an Associate Editor. Submit your research work to the journals!  </div>
+            </div>
+
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <div class="carousel-subtitle">Oct 1, 2021</div>
+              <div class="carousel-title">Yale Quantum Systems Lab Now Opens</div>
+              <div class="carousel-text">The Yale Quantum Systems Lab (QSL) is open for business. Come join us here at Yale! We have multiple open positions at the Ph.D. and internship levels. See opportunities on our group website. <a href="opportunities.html"> Learn more &#10095;&#10095;</a> </div>
+            </div>
+
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <div class="carousel-subtitle">September 1, 2021</div>
+                <div class="carousel-title">New Position at Yale</div>
+                <div class="carousel-text">I am excited to share that I am joining Yale CS as an Assistant Professor starting Fall 2021. I am so grateful for my mentors, colleagues, friends at UChicago and in the EPiQC collaboration for a perfect graduate school experience. <a href="https://fas.yale.edu/new-ladder-faculty-and-professors-2021-22"> Learn more &#10095;&#10095;</a></div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <!-- The dots/circles -->
+          <div class="slide-module text-center">
+            <div class="dot" onclick="currentSlide(1)"></div> 
+            <div class="dot" onclick="currentSlide(2)"></div> 
+            <div class="dot" onclick="currentSlide(3)"></div> 
+            <div class="dot" onclick="currentSlide(4)"></div> 
+          </div>
+          <br>
+          <div class="slide-module text-center"><div class="boxed"><a href="news.html" style="font-size:18px">See all news</a></div></div>
+      </div>
+
+      <div class="section-four">
+        <div class="slide-module text-center"><div class="secTitle"><a href="publications.html#talks">Recent Talks</a></div></div>
+        <br>
+        <!-- <div class="slide-module"><div class="block-text">
+          <br>
+            <div class="row">
+              <div class="header-column1 text-center">
+                <img src="images/" alt="Software" width="90%" height="90%" class="rounded-corners">
+                
+              </div>
+              <div class="header-column2">
+              <h6><font color="4e4e4e">&#128204; PINNED</font></h6>
+              <br>
+              <h6><font color="4e4e4e">TITLE</font></h6>
+              <p>Faculty Feature</p>
+              <br>
+              <h6><font color="4e4e4e">ABSTRACT</font></h6>
+               <p> Reseach Overview. </p>
+               <br><br>
+              </div>
+            </div>
+        </div></div> -->
+        <div class="slide-module"><div class="block-text">
+            <div class="row">
+              <div class="header-column1 text-center">
+                <a href="https://youtu.be/6x3JCwItcdg"><div class="image_carousel"><img src="images/talk-NDMIT22.png" alt="Noise Mitigation" width="85%" class="rounded-corners"></div></a>
+              </div>
+              <div class="header-column2">
+              <!-- <br> -->
+              <h6><font color="4e4e4e">VENUE</font></h6>
+              <p>Quantum Computer Systems Lecture Series by Univ of Notre Dame and MIT, July 2022</p>
+              <br>
+              <h6><font color="4e4e4e">TITLE</font></h6>
+              <p>Software and Algorithmic Approaches to Quantum Noise Mitigation: An Overview</p>
+              <br>
+              <h6><font color="4e4e4e">ABSTRACT</font></h6>
+              <p> I will talk about recent developments in noise mitigation techniques for quantum computers. In the Noisy Intermediate-Scale Quantum (NISQ) era, qubits have short lifetimes and quantum gates are prone to errors. Understanding and mitigating quantum noises becomes a crucial step in realizing practical quantum computation. In this talk I will first give an overview of the field ... <a href="https://qmlsys.mit.edu/lectures/">Learn more &#10095;&#10095;</a></p>
+              <br><br>
+              </div>
+            </div>
+        </div></div>
+        <br>
+        <div class="slide-module text-center"><div class="boxed"><a href="publications.html#talks" style="font-size:18px">See more talks</a></div></div>
+
+      </div>
+
+      <div class="section-footer">
+
+        <div class="social-links" id="social-center">
+          <a href="https://twitter.com/Yongshan_Ding" class="twitter" title="Twitter"></a> 
+          &nbsp;
+          <a href="https://github.com/yongshanding" class="github" title="Github"></a>
+          &nbsp;
+          <a href="youtube.html" class="youtube" title="YouTube"></a>
+          &nbsp;
+          <a href="https://www.yongshanding.com" class="webpage" title="Prof. Yongshan Ding's Webpage"></a>
+        </div>
+        <div class="hline text-center">
+              <!-- Yongshan Ding -->
+              <h4 class="faded"> <font color=#c6c6c6>______________________________</font> </h3>
+        </div>
+        <div class="copyright_text text-center">
+          Copyright © yongshanding
+        </div>
+      </div>
+
+    <a class="gotop" href="#" id="myGotop"></a>
+
+  </article>
+
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript">
+  (function($) {
+      $(document).ready(function(){
+          $('#mynavMenu').fadeIn(0);
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 0) {
+                  $('#mynavMenu').fadeOut(300);
+              } else if ($(this).scrollTop() < -1) {
+                  $('#mynavMenu').fadeOut(300);
+              } else {
+                  $('#mynavMenu').fadeIn(300);
+              }
+          });
+          $('#myGotop').fadeOut(100);
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 100) {
+                  $('#myGotop').fadeIn(300);
+              // } else if ($(this).scrollTop() < -1) {
+              //     $('#myGotop').fadeOut(300);
+              } else {
+                  $('#myGotop').fadeOut(300);
+              }
+          });
+      });
+      $.fn.viewed = function(partial) {
+        var upper = $(this).offset().top,
+            lower = upper + $(this).height(),
+            viewUpper = partial === true ? lower : upper,
+            viewLower = partial === true ? upper : lower;
+        return ((viewLower <= $(window).scrollTop() + $(window).height()) && (viewUpper >= $(window).scrollTop()));
+      };
+      // show more feature in carousel
+      var maxchar = 200;
+      $('.carousel-text').each(function () {
+          var text = $(this).text();
+          if(text.length > maxchar) {
+              var begin = text.substr(0, maxchar),
+                  end = text.substr(maxchar);
+              $(this).html(begin)
+                  .append($('<a class="showmore" style="color:gray"/>').attr('href', 'news.html').html(' ... (more)'))
+                  .append($('<div class="hidden" />').html(end));
+          }
+      });
+      $(document).on('click', '.showmore', function () {
+          $(this).next('.hidden').slideToggle(400);
+      })
+  })(jQuery);
+  </script>
+  <script>
+  function barsIcon() {
+    var nav = document.getElementById("mynavMenu");
+    if (nav.className === "navMenu") {
+      nav.className += " responsive";
+    } else {
+      nav.className = "navMenu";
+    }
+  }
+  </script>
+  <script type="text/javascript">
+  $(".slide-module").each(function(i, s) {
+    if ($(s).viewed(true)) {
+      $(s).addClass("viewed"); 
+    } 
+  });
+  $(window).scroll(function(event) {
+    $(".slide-module").each(function(i, s) {
+      if ($(s).viewed(true)) {
+        $(s).addClass("slide"); 
+      } 
+    });
+  });
+  </script>
+  <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
 </body>
 </html>
