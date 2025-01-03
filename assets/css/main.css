@@ -1011,11 +1011,11 @@ html {
     width: 35px;
     height:35px;
     /*display:block;*/
-    background-image: url('../../images/github-bw.png');
+    background-image: url('../../images/github-bw.jpg');
     background-size: 100% 100%;
   }
   .github:hover {
-    background-image: url('../../images/github.png');
+    background-image: url('../../images/github.jpg');
     background-size: 100% 100%;
   }
   
