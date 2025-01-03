@@ -935,17 +935,17 @@ html {
     background-size: 100% 100%;
   }
   
-  .twitter {
+  .linkedin {
     display: table-cell;
     position: relative;
     width: 35px;
     height:35px;
     /*display:block;*/
-    background-image: url('../../images/twitter-bw.png');
+    background-image: url('../../images/linkedin_bw.jpg');
     background-size: 100% 100%;
   }
   .twitter:hover {
-    background-image: url('../../images/twitter.png');
+    background-image: url('../../images/linkedin.jpg');
     background-size: 100% 100%;
   }
   
