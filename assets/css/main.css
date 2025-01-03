@@ -905,20 +905,6 @@ html {
     }
   }
 
-  .linkedin {
-    display: table-cell;
-    position: relative;
-    width: 35px;
-    height:35px;
-    /*display:block;*/
-    background-image: url('../../images/linkedin_bw.png');
-    background-size: 100% 100%;
-  }
-  .linkedin:hover {
-    background-image: url('../../images/linkedin.png');
-    background-size: 100% 100%;
-  }
-  
   .bars {
     display: table-cell;
     position: relative;
@@ -988,20 +974,6 @@ html {
   }
   .instagram:hover {
     background-image: url('../../images/instagram.png');
-    background-size: 100% 100%;
-  }
-  
-  .linkedin {
-    display: table-cell;
-    position: relative;
-    width: 35px;
-    height:35px;
-    /*display:block;*/
-    background-image: url('../../images/linkedin-bw.png');
-    background-size: 100% 100%;
-  }
-  .linkedin:hover {
-    background-image: url('../../images/linkedin.png');
     background-size: 100% 100%;
   }
   
