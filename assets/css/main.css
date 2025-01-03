@@ -911,11 +911,11 @@ html {
     width: 35px;
     height:35px;
     /*display:block;*/
-    background-image: url('../../images/linkedin_bw.jpg');
+    background-image: url('../../images/linkedin_bw.png');
     background-size: 100% 100%;
   }
   .linkedin:hover {
-    background-image: url('../../images/linkedin.jpg');
+    background-image: url('../../images/linkedin.png');
     background-size: 100% 100%;
   }
   
