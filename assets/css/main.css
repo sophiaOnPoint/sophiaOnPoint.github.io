@@ -904,6 +904,20 @@ html {
       text-decoration: none;
     }
   }
+
+  .linkedin {
+    display: table-cell;
+    position: relative;
+    width: 35px;
+    height:35px;
+    /*display:block;*/
+    background-image: url('../../images/linkedin_bw.jpg');
+    background-size: 100% 100%;
+  }
+  .linkedin:hover {
+    background-image: url('../../images/linkedin.jpg');
+    background-size: 100% 100%;
+  }
   
   .bars {
     display: table-cell;
