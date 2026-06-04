@@ -889,6 +889,18 @@ html {
   #page-link-light-text a:hover {text-decoration: none; color: #dfdfdf;}
   
   #social-center { width: 200px; margin: 0 auto; }
+
+.fa-icon-link {
+  display: inline-block;
+  color: #888;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.fa-icon-link:hover {
+  color: #00356b;
+  text-decoration: none;
+}
   
   .social-links
   {
