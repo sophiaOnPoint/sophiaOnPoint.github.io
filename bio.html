@@ -21,20 +21,45 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
   <style>
+    .bio-hero {
+      width: 100%;
+      height: 60vh;
+      min-height: 340px;
+      max-height: 560px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .bio-poem-panel {
+      background-color: #3a3a3a;
+      padding: 64px 20px 72px;
+      text-align: center;
+    }
+
+    .bio-poem-panel p {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 17px;
+      font-style: italic;
+      color: #e8e8e8;
+      line-height: 2.1;
+      margin: 0 auto 28px;
+      max-width: 680px;
+    }
+
+    .bio-poem-panel p:last-child {
+      margin-bottom: 0;
+    }
+
     .bio-wrapper {
       width: 52%;
       margin: 0 auto;
-      padding-top: 60px;
+      padding-top: 72px;
       padding-bottom: 100px;
     }
 
     .bio-poem {
-      font-family: 'Lora', Georgia, serif;
-      font-size: 17px;
-      font-style: italic;
-      color: #444;
-      line-height: 2;
-      margin-bottom: 72px;
+      display: none;
     }
 
     .bio-section {
@@ -83,10 +108,31 @@
       </div>
     </header>
 
-    <div style="padding-top: 120px; background-color: #ffffff;">
+    <!-- Hero image -->
+    <div style="padding-top: 60px;">
+      <img src="images/bio.png" alt="Yuqin Sophia Duan" class="bio-hero">
+    </div>
+
+    <!-- Poem panel -->
+    <div class="bio-poem-panel">
+      <p>She stood at the summer field's edge, ice cream melting in her hand,<br>
+      watching fireflies rise and vanish into dark she didn't understand.<br>
+      She learned to chase what flickers — to follow light that will not stay,<br>
+      that travels not as wave alone, nor particle, but both ways.</p>
+
+      <p>The mountains do not ask permission when they lift against the sky.<br>
+      The river finds the sea by falling, not by asking why.<br>
+      Something old and patient in the world calls out without a sound —<br>
+      she followed it through every door, through every lab and town.</p>
+
+      <p>As night gathers, vast and wordless around her,<br>
+      she is still the little girl at the field's edge, following the light.</p>
+    </div>
+
+    <div style="background-color: #ffffff;">
       <div class="bio-wrapper">
 
-        <!-- Poem -->
+        <!-- Poem (hidden, replaced by panel above) -->
         <div class="bio-poem">
           <p>She stood at the summer field's edge, ice cream melting in her hand,<br>
           watching fireflies rise and vanish into dark she didn't understand.<br>
@@ -129,7 +175,8 @@
         </div>
 
       </div>
-    </div>
+    </div><!-- end bio-wrapper -->
+    </div><!-- end background white -->
 
     <div class="section-footer">
       <div class="social-links" id="social-center">
