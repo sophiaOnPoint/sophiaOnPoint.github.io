@@ -77,23 +77,13 @@
       flex-direction: row;
       gap: 24px;
       overflow-x: auto;
-      padding-bottom: 16px;
+      padding-bottom: 8px;
       -webkit-overflow-scrolling: touch;
-      scrollbar-width: thin;
-      scrollbar-color: #ddd transparent;
+      scrollbar-width: none;
     }
 
     .album-scroll::-webkit-scrollbar {
-      height: 4px;
-    }
-
-    .album-scroll::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    .album-scroll::-webkit-scrollbar-thumb {
-      background-color: #ddd;
-      border-radius: 2px;
+      display: none;
     }
 
     .album-card {
@@ -112,10 +102,14 @@
 
     .album-card img {
       width: 320px;
-      height: 220px;
-      object-fit: cover;
+      height: auto;
       border-radius: 6px;
       display: block;
+    }
+
+    .gallery-title span::before,
+    .gallery-title span::after {
+      display: none;
     }
 
     .album-caption {
@@ -189,10 +183,8 @@
       she is still the little girl at the field's edge, following the light.</p>
     </div>
 
-    <!-- Divider image -->
-    <img src="images/bio2.png" alt="" class="bio-hero" style="max-height:400px;">
-
     <div style="background-color: #3a3a3a;">
+    <img src="images/bio2.png" alt="" class="bio-hero" style="max-height:400px;">
       <div class="bio-wrapper">
 
         <!-- Poem (hidden, replaced by panel above) -->
@@ -272,7 +264,7 @@
 
           <!-- Dance alone in a Moon -->
           <div style="margin-bottom:40px;">
-            <p style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px;">Dance alone in a Moon &nbsp;<span style="color:#aaa;">月夜独舞</span></p>
+            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Dance alone in a Moon — <span style="color:#aaa;">月夜独舞</span></div>
             <div class="album-scroll">
               <div class="album-card">
                 <img src="images/gallery/IMG_9912.JPG" alt="Dance alone in a Moon">
@@ -282,7 +274,7 @@
 
           <!-- Girl in the Lavender Farm -->
           <div style="margin-bottom:40px;">
-            <p style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px;">Girl in the Lavender Farm &nbsp;<span style="color:#aaa;">夕阳下的薰衣草女孩</span></p>
+            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Girl in the Lavender Farm — <span style="color:#aaa;">夕阳下的薰衣草女孩</span></div>
             <div class="album-scroll">
               <div class="album-card">
                 <img src="images/gallery/IMG_7243.JPG" alt="Girl in the Lavender Farm">
@@ -292,7 +284,7 @@
 
           <!-- If Life was Still as When We First Met -->
           <div style="margin-bottom:40px;">
-            <p style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px;">If Life was Still as When We First Met &nbsp;<span style="color:#aaa;">人生若只如初见</span></p>
+            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">If Life was Still as When We First Met — <span style="color:#aaa;">人生若只如初见</span></div>
             <div class="album-scroll">
               <div class="album-card">
                 <img src="images/gallery/IMG_6357.JPG" alt="If Life was Still as When We First Met">
@@ -305,7 +297,7 @@
 
           <!-- Morning Light from Victorian Era -->
           <div style="margin-bottom:40px;">
-            <p style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px;">Morning Light from Victorian Era</p>
+            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Morning Light from Victorian Era</p>
             <div class="album-scroll">
               <div class="album-card">
                 <img src="images/gallery/IMG_6415.JPG" alt="Morning Light from Victorian Era">
@@ -318,7 +310,7 @@
 
           <!-- Wrap into the Spring -->
           <div style="margin-bottom:40px;">
-            <p style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px;">Wrap into the Spring &nbsp;<span style="color:#aaa;">四月芳菲尽</span></p>
+            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Wrap into the Spring — <span style="color:#aaa;">四月芳菲尽</span></div>
             <div class="album-scroll">
               <div class="album-card">
                 <img src="images/gallery/2507.JPEG" alt="Wrap into the Spring">
@@ -331,7 +323,7 @@
 
           <!-- Miss in a Fallen City -->
           <div style="margin-bottom:40px;">
-            <p style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px;">Miss in a Fallen City &nbsp;<span style="color:#aaa;">鲸鸿一梦</span></p>
+            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Miss in a Fallen City — <span style="color:#aaa;">鲸鸿一梦</span></div>
             <div class="album-scroll">
               <div class="album-card">
                 <img src="images/gallery/IMG_5346.JPG" alt="Miss in a Fallen City">
@@ -341,7 +333,7 @@
 
           <!-- First Snow -->
           <div style="margin-bottom:40px;">
-            <p style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px;">First Snow &nbsp;<span style="color:#aaa;">初雪</span></p>
+            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">First Snow — <span style="color:#aaa;">初雪</span></div>
             <div class="album-scroll">
               <div class="album-card">
                 <img src="images/gallery/042d5dcd2c144c3c949ae49920901569.JPG" alt="First Snow">
