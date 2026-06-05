@@ -119,8 +119,8 @@
 
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
 
     .gallery-grid-item {
@@ -152,7 +152,7 @@
     }
 
     @media screen and (max-width: 600px) {
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(1, 1fr); }
     }
 
     .album-caption {
@@ -306,10 +306,7 @@
           <p style="font-size:11px; color:#bbb; font-family:'Open Sans',sans-serif; margin-bottom:32px;">Credits to @Can Pu</p>
 
           <div class="gallery-grid">
-            <div class="gallery-grid-item">
-              <img src="images/gallery/IMG_7243.JPG" alt="Girl in the Lavender Farm">
-              <div class="gallery-grid-caption">Girl in the Lavender Farm<br><span class="gallery-grid-caption-zh">夕阳下的薰衣草女孩</span></div>
-            </div>
+            <!-- Row 1: If Life was Still as When We First Met (pair) -->
             <div class="gallery-grid-item">
               <img src="images/gallery/IMG_6357.JPG" alt="If Life was Still as When We First Met">
               <div class="gallery-grid-caption">If Life was Still as When We First Met<br><span class="gallery-grid-caption-zh">人生若只如初见</span></div>
@@ -318,6 +315,7 @@
               <img src="images/gallery/IMG_6358.JPG" alt="If Life was Still as When We First Met">
               <div class="gallery-grid-caption">If Life was Still as When We First Met<br><span class="gallery-grid-caption-zh">人生若只如初见</span></div>
             </div>
+            <!-- Row 2: Morning Light from Victorian Era (pair) -->
             <div class="gallery-grid-item">
               <img src="images/gallery/IMG_6415.JPG" alt="Morning Light from Victorian Era">
               <div class="gallery-grid-caption">Morning Light from Victorian Era</div>
@@ -326,6 +324,7 @@
               <img src="images/gallery/IMG_6868.JPG" alt="Morning Light from Victorian Era">
               <div class="gallery-grid-caption">Morning Light from Victorian Era</div>
             </div>
+            <!-- Row 3: Wrap into the Spring (pair) -->
             <div class="gallery-grid-item">
               <img src="images/gallery/2507.JPEG" alt="Wrap into the Spring">
               <div class="gallery-grid-caption">Wrap into the Spring<br><span class="gallery-grid-caption-zh">四月芳菲尽</span></div>
@@ -334,10 +333,16 @@
               <img src="images/gallery/IMG_5555.JPG" alt="Wrap into the Spring">
               <div class="gallery-grid-caption">Wrap into the Spring<br><span class="gallery-grid-caption-zh">四月芳菲尽</span></div>
             </div>
+            <!-- Row 4: singles -->
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_7243.JPG" alt="Girl in the Lavender Farm">
+              <div class="gallery-grid-caption">Girl in the Lavender Farm<br><span class="gallery-grid-caption-zh">夕阳下的薰衣草女孩</span></div>
+            </div>
             <div class="gallery-grid-item">
               <img src="images/gallery/IMG_5346.JPG" alt="Miss in a Fallen City">
               <div class="gallery-grid-caption">Miss in a Fallen City<br><span class="gallery-grid-caption-zh">鲸鸿一梦</span></div>
             </div>
+            <!-- Row 5: singles -->
             <div class="gallery-grid-item">
               <img src="images/gallery/042d5dcd2c144c3c949ae49920901569.JPG" alt="First Snow">
               <div class="gallery-grid-caption">First Snow<br><span class="gallery-grid-caption-zh">初雪</span></div>
