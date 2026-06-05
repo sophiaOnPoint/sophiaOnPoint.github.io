@@ -22,40 +22,46 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
   <style>
-    .project-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 48px;
+    .project-list {
       width: 70%;
       margin-left: 15%;
       margin-right: 15%;
       padding-top: 20px;
       padding-bottom: 40px;
+      text-align: left;
     }
-    .project-card {
-      flex: 1 1 300px;
-      max-width: 480px;
+    .project-row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 56px;
     }
-    .project-card img {
-      width: 100%;
+    .project-row img {
+      width: 40%;
+      flex-shrink: 0;
       border-radius: 6%;
       box-shadow: rgba(0,0,0,0.15) 0px 5px 15px;
-      display: block;
     }
-    .project-card h3 {
+    .project-row-text {
+      flex: 1;
+    }
+    .project-row-text h3 {
       font-family: "Lora", Georgia, serif;
       font-size: 18px;
       font-weight: 700;
-      margin-top: 16px;
-      margin-bottom: 8px;
+      margin-top: 0;
+      margin-bottom: 12px;
       color: #222;
+      text-align: left;
     }
-    .project-card p {
+    .project-row-text p {
       font-size: 14px;
       line-height: 26px;
       color: #555;
+      text-align: left;
     }
-    .project-card a.readmore {
+    .project-row-text a.readmore {
       display: inline-block;
       margin-top: 14px;
       font-size: 13px;
@@ -63,15 +69,21 @@
       color: #3282e6;
       text-decoration: none;
     }
-    .project-card a.readmore:hover {
+    .project-row-text a.readmore:hover {
       color: #00356b;
       text-decoration: underline;
     }
-    @media screen and (max-width: 1000px) {
-      .project-grid {
+    @media screen and (max-width: 600px) {
+      .project-list {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+      }
+      .project-row {
+        flex-direction: column;
+      }
+      .project-row img {
+        width: 100%;
       }
     }
   </style>
@@ -95,26 +107,30 @@
       <div class="slide-module text-center" style="padding-top: 60px;">
         <div class="secTitle">Projects</div>
       </div>
-      <div class="project-grid">
+      <div class="project-list">
 
         <!-- DIGIT -->
-        <div class="project-card">
+        <div class="project-row">
           <a href="projects/DIGIT.html">
             <img src="images/DIGIT.jpg" alt="DIGIT project">
           </a>
-          <h3>Discrete-grid Imaging Technique (DIGIT)</h3>
-          <p>A physics-informed computational microscopy framework combining a multiphysics digital twin with Bayesian inference to achieve Ångström-level localization accuracy in super-resolution imaging.</p>
-          <a href="projects/DIGIT.html" class="readmore">Learn more &#10095;&#10095;</a>
+          <div class="project-row-text">
+            <h3>Discrete-grid Imaging Technique (DIGIT)</h3>
+            <p>A physics-informed computational microscopy framework combining a multiphysics digital twin with Bayesian inference to achieve Ångström-level localization accuracy in super-resolution imaging.</p>
+            <a href="projects/DIGIT.html" class="readmore">Learn more &#10095;&#10095;</a>
+          </div>
         </div>
 
         <!-- VLDMoRt -->
-        <div class="project-card">
+        <div class="project-row">
           <a href="projects/VLDMoRt.html">
             <img src="images/VLDMoRt.png" alt="VLDMoRt project">
           </a>
-          <h3>Vertically Loaded Diamond Microdisk Resonator (VLDMoRt)</h3>
-          <p>A physics-informed neural-network framework that reconstructs cavity geometry from SEM and AFM measurements to predict spin–photon interface performance for scalable quantum network architectures.</p>
-          <a href="projects/VLDMoRt.html" class="readmore">Learn more &#10095;&#10095;</a>
+          <div class="project-row-text">
+            <h3>Vertically Loaded Diamond Microdisk Resonator (VLDMoRt)</h3>
+            <p>A physics-informed neural-network framework that reconstructs cavity geometry from SEM and AFM measurements to predict spin–photon interface performance for scalable quantum network architectures.</p>
+            <a href="projects/VLDMoRt.html" class="readmore">Learn more &#10095;&#10095;</a>
+          </div>
         </div>
 
       </div>
