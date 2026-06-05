@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFK5R4SXYP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CFK5R4SXYP');
+  </script>
+  <title>VLDMoRt - Yuqin Sophia Duan</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body>
+  <article>
+    <header>
+      <div class="navMenu" id="mynavMenu">
+        <a href="../index.html" class="fixleft" title="home" style="font-size:26px;"><b>Yuqin Sophia Duan</b></a>
+        <a href="../vitae.pdf">CV</a>
+        <a href="../bio.html">Bio</a>
+        <a href="../projects.html">Projects</a>
+        <a href="javascript:void(0);" class="icon" onclick="barsIcon()" title="menu">
+          <i class="bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <div class="section-title" style="padding-bottom: 80px;">
+      <div class="header-intro">
+        <div class="slide-module"><div class="block-text">
+
+          <p style="font-size:13px; color:#888; font-family:'Open Sans',sans-serif;">
+            <a href="../projects.html">&#8592; Projects</a>
+          </p>
+          <br>
+
+          <h3 style="font-family:'Lora',Georgia,serif; font-weight:700; font-size:26px; color:#222; line-height:1.4;">
+            Vertically Loaded Diamond Microdisk Resonator (VLDMoRt)
+          </h3>
+          <br>
+
+          <div class="image_carousel" style="margin-bottom: 32px;">
+            <img src="../images/VLDMoRt.png" alt="VLDMoRt overview" style="width:100%; border-radius:6%;">
+          </div>
+
+          <p>VLDMoRt is a vertically loaded diamond microdisk resonator designed to enable scalable spin–photon interfaces for free-space quantum network architectures. Although optimized cavity designs can enhance light–matter interaction, their performance is highly sensitive to nanometer-scale deviations between the intended geometry and the fabricated device. To address this design–fabrication gap, we developed a physics-informed neural-network framework that reconstructs device geometry from SEM and AFM measurements, builds simulation models of the realized cavity, and predicts spin–photon interface performance. By closing the loop between fabrication metrology, electromagnetic simulation, and design optimization, this approach provides a robust pathway toward scalable, fabrication-tolerant diamond cavities.</p>
+          <br>
+
+          <p style="font-size:13px; color:#666; font-family:'Open Sans',sans-serif;">
+            <b>Related publication:</b><br>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X-HgDAIl7cEC&citation_for_view=X-HgDAIl7cEC:zYLM7Y9cAGgC">A vertically-loaded diamond microdisk resonator spin-photon interface</a> — <i>Optics Express</i>, 2021
+          </p>
+          <br>
+
+        </div></div>
+      </div>
+    </div>
+
+    <div class="section-footer">
+      <div class="social-links" id="social-center">
+        <a href="https://www.linkedin.com/in/yuqin-sophia-duan-2b45a8a2/" class="fa-icon-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        &nbsp;
+        <a href="https://github.com/sophiaOnPoint" class="fa-icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        &nbsp;
+        <a href="https://scholar.google.com/citations?hl=en&user=X-HgDAIl7cEC" class="fa-icon-link" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+        &nbsp;
+        <a href="../vitae.pdf" class="fa-icon-link" title="Curriculum Vitae"><i class="fa-regular fa-file-lines"></i></a>
+      </div>
+      <div class="hline text-center">
+        <h4 class="faded"><font color=#c6c6c6>______________________________</font></h4>
+      </div>
+      <div class="copyright_text text-center">
+        Copyright &copy; Yuqin Sophia Duan
+      </div>
+    </div>
+
+    <a class="gotop" href="#" id="myGotop"></a>
+  </article>
+
+  <script type="text/javascript" src="../assets/js/jquery.js"></script>
+  <script type="text/javascript">
+  (function($) {
+    $(document).ready(function(){
+      $('#mynavMenu').fadeIn(0);
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 0) {
+          $('#mynavMenu').fadeOut(300);
+        } else {
+          $('#mynavMenu').fadeIn(300);
+        }
+      });
+      $('#myGotop').fadeOut(100);
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+          $('#myGotop').fadeIn(300);
+        } else {
+          $('#myGotop').fadeOut(300);
+        }
+      });
+    });
+  })(jQuery);
+  </script>
+  <script>
+  function barsIcon() {
+    var nav = document.getElementById("mynavMenu");
+    if (nav.className === "navMenu") {
+      nav.className += " responsive";
+    } else {
+      nav.className = "navMenu";
+    }
+  }
+  </script>
+</body>
+</html>
