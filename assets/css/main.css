@@ -918,17 +918,16 @@ html {
   }
 
   .bars {
-    display: table-cell;
-    position: relative;
-    width: 20px;
-    height:20px;
-    /*display:block;*/
-    background-image: url('../../images/bars-bw.png');
-    background-size: 100% 100%;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: #888;
+  }
+  .bars::before {
+    content: '\f0c9';
   }
   .bars:hover {
-    background-image: url('../../images/bars.png');
-    background-size: 100% 100%;
+    color: #333;
   }
   
   .gotop {
