@@ -47,7 +47,7 @@
       <div class="section-title  text-center">
       <div class="column-center">
         <div class="header-column1 text-center">
-          <div class="image_carousel"><img src="images/Sophia_profile.jpg" alt="Sophia Yuqin Duan" width="300" height="300" class="rounded-corners"></div>
+          <div class="image_carousel"><img id="profile-pic" src="images/Sophia_profile.jpg" alt="Sophia Yuqin Duan" width="300" height="300" class="rounded-corners" style="object-fit: cover; object-position: center top;"></div>
         </div>
         <div class="header-column2">
           <br>
@@ -358,6 +358,20 @@
       slides[slideIndex-1].style.display = "block"; 
       dots[slideIndex-1].className += " active";
     }
+  </script>
+  <script>
+    (function() {
+      var profiles = [
+        'images/profile/Sophia_profile.jpg',
+        'images/profile/2fbc7451514d9eaad17b4d1c8447fc85.JPG',
+        'images/profile/81d7b8e6e5fe24d2316074667170236e.JPG',
+        'images/profile/IMG_4396.jpg',
+        'images/profile/Picture1.jpg',
+        'images/profile/Picture2.jpg'
+      ];
+      var img = document.getElementById('profile-pic');
+      img.src = profiles[Math.floor(Math.random() * profiles.length)];
+    })();
   </script>
 </body>
 </html>
