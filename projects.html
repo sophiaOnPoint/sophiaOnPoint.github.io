@@ -22,67 +22,83 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
   <style>
-    .project-list {
+    .projects-wrapper {
       width: 70%;
-      margin-left: 15%;
-      margin-right: 15%;
-      padding-top: 20px;
-      padding-bottom: 40px;
-      text-align: left;
+      margin: 0 auto;
+      padding-top: 30px;
+      padding-bottom: 60px;
     }
     .project-row {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-      gap: 40px;
-      margin-bottom: 56px;
+      gap: 48px;
+      margin-bottom: 64px;
     }
-    .project-row img {
-      width: 40%;
+    .project-row .proj-img {
+      width: 45%;
       flex-shrink: 0;
+    }
+    .project-row .proj-img img {
+      width: 100%;
+      display: block;
       border-radius: 6%;
       box-shadow: rgba(0,0,0,0.15) 0px 5px 15px;
     }
-    .project-row-text {
+    .project-row .proj-text {
       flex: 1;
+      text-align: left;
+      padding-top: 8px;
     }
-    .project-row-text h3 {
+    .project-row .proj-text h3 {
       font-family: "Lora", Georgia, serif;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       margin-top: 0;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       color: #222;
-      text-align: left;
+      line-height: 1.4;
     }
-    .project-row-text p {
-      font-size: 14px;
-      line-height: 26px;
+    .project-row .proj-text p {
+      font-family: "Lora", Georgia, serif;
+      font-size: 15px;
+      line-height: 28px;
       color: #555;
-      text-align: left;
+      margin: 0;
     }
-    .project-row-text a.readmore {
+    .project-row .proj-text a.readmore {
       display: inline-block;
-      margin-top: 14px;
-      font-size: 13px;
+      margin-top: 18px;
+      font-size: 14px;
       font-family: "Open Sans", sans-serif;
       color: #3282e6;
       text-decoration: none;
     }
-    .project-row-text a.readmore:hover {
+    .project-row .proj-text a.readmore:hover {
       color: #00356b;
       text-decoration: underline;
     }
+
+    /* Tablet */
+    @media screen and (max-width: 900px) {
+      .projects-wrapper {
+        width: 85%;
+      }
+      .project-row .proj-img {
+        width: 42%;
+      }
+    }
+
+    /* Mobile */
     @media screen and (max-width: 600px) {
-      .project-list {
+      .projects-wrapper {
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
       }
       .project-row {
         flex-direction: column;
+        gap: 24px;
       }
-      .project-row img {
+      .project-row .proj-img {
         width: 100%;
       }
     }
@@ -103,18 +119,22 @@
       </div>
     </header>
 
-    <div class="section-title text-center" style="padding-bottom: 60px;">
-      <div class="slide-module text-center" style="padding-top: 60px;">
+    <div style="padding-top: 120px; padding-bottom: 80px; background-color: #ffffff;">
+
+      <div class="text-center" style="padding-bottom: 40px;">
         <div class="secTitle">Projects</div>
       </div>
-      <div class="project-list">
+
+      <div class="projects-wrapper">
 
         <!-- DIGIT -->
         <div class="project-row">
-          <a href="projects/DIGIT.html">
-            <img src="images/DIGIT.jpg" alt="DIGIT project">
-          </a>
-          <div class="project-row-text">
+          <div class="proj-img">
+            <a href="projects/DIGIT.html">
+              <img src="images/DIGIT.jpg" alt="DIGIT project">
+            </a>
+          </div>
+          <div class="proj-text">
             <h3>Discrete-grid Imaging Technique (DIGIT)</h3>
             <p>A physics-informed computational microscopy framework combining a multiphysics digital twin with Bayesian inference to achieve Ångström-level localization accuracy in super-resolution imaging.</p>
             <a href="projects/DIGIT.html" class="readmore">Learn more &#10095;&#10095;</a>
@@ -123,10 +143,12 @@
 
         <!-- VLDMoRt -->
         <div class="project-row">
-          <a href="projects/VLDMoRt.html">
-            <img src="images/VLDMoRt.png" alt="VLDMoRt project">
-          </a>
-          <div class="project-row-text">
+          <div class="proj-img">
+            <a href="projects/VLDMoRt.html">
+              <img src="images/VLDMoRt.png" alt="VLDMoRt project">
+            </a>
+          </div>
+          <div class="proj-text">
             <h3>Vertically Loaded Diamond Microdisk Resonator (VLDMoRt)</h3>
             <p>A physics-informed neural-network framework that reconstructs cavity geometry from SEM and AFM measurements to predict spin–photon interface performance for scalable quantum network architectures.</p>
             <a href="projects/VLDMoRt.html" class="readmore">Learn more &#10095;&#10095;</a>
