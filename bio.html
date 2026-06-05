@@ -112,6 +112,49 @@
       display: none;
     }
 
+    .gallery-grid-caption-zh::before,
+    .gallery-grid-caption-zh::after {
+      display: none;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .gallery-grid-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gallery-grid-item img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .gallery-grid-caption {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 12px;
+      font-style: italic;
+      color: #777;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .gallery-grid-caption-zh {
+      font-size: 11px;
+      color: #aaa;
+      font-style: normal;
+    }
+
+    @media screen and (max-width: 600px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     .album-caption {
       font-family: 'Open Sans', sans-serif;
       font-size: 12px;
@@ -184,10 +227,7 @@
     </div>
 
     <div style="background-color: #3a3a3a;">
-      <div class="bio-wrapper" style="padding-top: 40px; padding-bottom: 0;">
-        <img src="images/bio2.png" alt="" style="width:100%; max-height:400px; object-fit:cover; border-radius:6px; display:block; margin-bottom:40px;">
-      </div>
-      <div class="bio-wrapper" style="padding-top: 0;">
+      <div class="bio-wrapper" style="padding-bottom: 60px;">
 
         <!-- Poem (hidden, replaced by panel above) -->
         <div class="bio-poem">
@@ -208,6 +248,7 @@
         <!-- Background -->
         <div class="bio-section" id="background">
           <div class="bio-section-label" style="color:#888;">Background</div>
+          <img src="images/bio2.png" alt="" style="width:100%; max-height:400px; object-fit:cover; border-radius:6px; display:block; margin-bottom:32px;">
           <p style="color:#e8e8e8;">Raised in Beijing, I grew up among skylines, crowded streets, and the fast rhythm. I was trained in classical Chinese dance, where I first learned to understand beauty through movement, discipline, and form.</p>
           <p style="color:#e8e8e8;">I studied at Purdue and MIT, where I became a scientist. During my PhD, I traveled across the United States and discovered that the world beneath the heavens is just as wonderful as the heavens above.</p>
           <p style="color:#e8e8e8;">I am drawn to the complexity and beauty of small systems, I love classical music, and I dance with ocean waves, mountain snow, and the sunset glow.</p>
@@ -264,82 +305,46 @@
           <div class="bio-section-label">Gallery</div>
           <p style="font-size:11px; color:#bbb; font-family:'Open Sans',sans-serif; margin-bottom:32px;">Credits to @Can Pu</p>
 
-          <!-- Girl in the Lavender Farm -->
-          <div style="margin-bottom:40px;">
-            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Girl in the Lavender Farm — <span style="color:#aaa;">夕阳下的薰衣草女孩</span></div>
-            <div class="album-scroll">
-              <div class="album-card">
-                <img src="images/gallery/IMG_7243.JPG" alt="Girl in the Lavender Farm">
-              </div>
+          <div class="gallery-grid">
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_7243.JPG" alt="Girl in the Lavender Farm">
+              <div class="gallery-grid-caption">Girl in the Lavender Farm<br><span class="gallery-grid-caption-zh">夕阳下的薰衣草女孩</span></div>
             </div>
-          </div>
-
-          <!-- If Life was Still as When We First Met -->
-          <div style="margin-bottom:40px;">
-            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">If Life was Still as When We First Met — <span style="color:#aaa;">人生若只如初见</span></div>
-            <div class="album-scroll">
-              <div class="album-card">
-                <img src="images/gallery/IMG_6357.JPG" alt="If Life was Still as When We First Met">
-              </div>
-              <div class="album-card">
-                <img src="images/gallery/IMG_6358.JPG" alt="If Life was Still as When We First Met">
-              </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_6357.JPG" alt="If Life was Still as When We First Met">
+              <div class="gallery-grid-caption">If Life was Still as When We First Met<br><span class="gallery-grid-caption-zh">人生若只如初见</span></div>
             </div>
-          </div>
-
-          <!-- Morning Light from Victorian Era -->
-          <div style="margin-bottom:40px;">
-            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Morning Light from Victorian Era</p>
-            <div class="album-scroll">
-              <div class="album-card">
-                <img src="images/gallery/IMG_6415.JPG" alt="Morning Light from Victorian Era">
-              </div>
-              <div class="album-card">
-                <img src="images/gallery/IMG_6868.JPG" alt="Morning Light from Victorian Era">
-              </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_6358.JPG" alt="If Life was Still as When We First Met">
+              <div class="gallery-grid-caption">If Life was Still as When We First Met<br><span class="gallery-grid-caption-zh">人生若只如初见</span></div>
             </div>
-          </div>
-
-          <!-- Wrap into the Spring -->
-          <div style="margin-bottom:40px;">
-            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Wrap into the Spring — <span style="color:#aaa;">四月芳菲尽</span></div>
-            <div class="album-scroll">
-              <div class="album-card">
-                <img src="images/gallery/2507.JPEG" alt="Wrap into the Spring" style="height:212px; object-fit:cover;">
-              </div>
-              <div class="album-card">
-                <img src="images/gallery/IMG_5555.JPG" alt="Wrap into the Spring" style="height:212px; object-fit:cover;">
-              </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_6415.JPG" alt="Morning Light from Victorian Era">
+              <div class="gallery-grid-caption">Morning Light from Victorian Era</div>
             </div>
-          </div>
-
-          <!-- Miss in a Fallen City -->
-          <div style="margin-bottom:40px;">
-            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Miss in a Fallen City — <span style="color:#aaa;">鲸鸿一梦</span></div>
-            <div class="album-scroll">
-              <div class="album-card">
-                <img src="images/gallery/IMG_5346.JPG" alt="Miss in a Fallen City">
-              </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_6868.JPG" alt="Morning Light from Victorian Era">
+              <div class="gallery-grid-caption">Morning Light from Victorian Era</div>
             </div>
-          </div>
-
-          <!-- First Snow -->
-          <div style="margin-bottom:40px;">
-            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">First Snow — <span style="color:#aaa;">初雪</span></div>
-            <div class="album-scroll">
-              <div class="album-card">
-                <img src="images/gallery/042d5dcd2c144c3c949ae49920901569.JPG" alt="First Snow">
-              </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/2507.JPEG" alt="Wrap into the Spring">
+              <div class="gallery-grid-caption">Wrap into the Spring<br><span class="gallery-grid-caption-zh">四月芳菲尽</span></div>
             </div>
-          </div>
-
-          <!-- Dance alone in a Moon -->
-          <div style="margin-bottom:40px;">
-            <div class="gallery-title" style="font-family:'Lora',Georgia,serif; font-size:14px; color:#555; margin-bottom:14px; font-style:italic;">Dance alone in a Moon — <span style="color:#aaa;">月夜独舞</span></div>
-            <div class="album-scroll">
-              <div class="album-card">
-                <img src="images/gallery/IMG_9912.JPG" alt="Dance alone in a Moon">
-              </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_5555.JPG" alt="Wrap into the Spring">
+              <div class="gallery-grid-caption">Wrap into the Spring<br><span class="gallery-grid-caption-zh">四月芳菲尽</span></div>
+            </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_5346.JPG" alt="Miss in a Fallen City">
+              <div class="gallery-grid-caption">Miss in a Fallen City<br><span class="gallery-grid-caption-zh">鲸鸿一梦</span></div>
+            </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/042d5dcd2c144c3c949ae49920901569.JPG" alt="First Snow">
+              <div class="gallery-grid-caption">First Snow<br><span class="gallery-grid-caption-zh">初雪</span></div>
+            </div>
+            <div class="gallery-grid-item">
+              <img src="images/gallery/IMG_9912.JPG" alt="Dance alone in a Moon">
+              <div class="gallery-grid-caption">Dance alone in a Moon<br><span class="gallery-grid-caption-zh">月夜独舞</span></div>
             </div>
           </div>
 
